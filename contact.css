@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #19b8d4; /* Dark red color */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #052b41; /* Gold color */
+    color: #19b8d4;
+}
+
+main {
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #008b74; /* Dark maroon color */
+}
+
+h2 {
+    color: #052b41; /* Gold color */
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+    
+}
+
+.culture-item {
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
+}
+
+.culture-item:hover {
+    transform: scale(1.05); /* Scale up the element slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.culture-item img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #19b8d4; /* Adding border to images */
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color:#19b8d4; /* Dark maroon color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

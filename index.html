@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alae</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="greeting-page">
+        <header>
+            <div id="logo">
+                <img src="logo1.jpg" alt="Logo">
+                <span>Explore.ph</span>
+            </div>
+        </header>
+        <video autoplay muted loop id="bg-video">
+            <source src="fortune island2.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <section id="greeting">
+            <h1>Discover Batangas!</h1>
+            <p>Explore the natural beauty, delectable cuisine, and vibrant culture of Batangas.<italic> Click the button to discover more about Batangas.</italic></p>
+            <button id="enter-btn">See More!</button>
+        </section>
+    </div>
+    <div id="shop" style="display: none;">
+        <header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="home.html">Spots</a></li>
+                    <li><a href="about.html">Foods</a></li>
+                    <li><a href="contact.html">Culture</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="homepage-content">
+                <h1>Homepage</h1>
+                <p>Welcome to Discover Batangas! We invite you to explore the breathtaking spots, delicious foods, and rich culture of the Batangueños.</p>
+                <div id="spots">
+                    <h2>Featured Spots</h2>
+                    <div class="gallery">
+                        <div class="gallery-item"><img src="Taal-Volcano-Batangas.jpg" alt="Taal Volcano"><p>Taal Volcano</p></div>
+                        <div class="gallery-item"><img src="anilao.jpg" alt="Anilao"><p>Anilao</p></div>
+                        <div class="gallery-item"><img src="calatagan.jpg" alt="Calatagan"><p>Calatagan Beach</p></div>
+                    </div>
+                </div>
+                <div class="description">
+                    <p> Batangas is home to stunning attractions like Taal Volcano, Anilao, and Calatagan Beach. Taal Volcano, with its unique crater lake, offers breathtaking views and hiking adventures. Anilao is a diver’s paradise, famous for its vibrant coral reefs and diverse marine life. Calatagan Beach boasts pristine sands and clear waters, perfect for relaxation and water activities. These destinations highlight the natural beauty and adventure opportunities that make Batangas a must-visit province in the Philippines.</p>
+                </div>
+                <div id="foods">
+                    <h2>Delectable Foods</h2>
+                    <div class="gallery">
+                        <div class="gallery-item"><img src="bulalo.jpg" alt="Bulalo"><p>Bulalo</p></div>
+                        <div class="gallery-item"><img src="lomi.webp" alt="Lomi"><p>Lomi</p></div>
+                        <div class="gallery-item"><img src="kape b.webp" alt="Kapeng Barako"><p>Kapeng Barako</p></div>
+                    </div>
+                    <div class="description">
+                        <p> Batangas is renowned for its culinary delights, including Bulalo, Lomi, and Kapeng Barako. Bulalo is a hearty beef shank soup, slow-cooked to tender perfection with bone marrow, corn, and vegetables, offering a comforting and rich flavor. Lomi, a thick noodle soup, is packed with egg noodles, meat, vegetables, and a savory, starchy broth, providing a satisfying and flavorful meal. Kapeng Barako, the province's famous coffee, is known for its strong, bold taste and robust aroma, making it a favorite among coffee lovers. These dishes reflect the rich culinary heritage and flavors of Batangas.</p>
+                    </div>
+                <div id="culture">
+                    <h2>Batangueño Culture</h2>
+                    <div class="gallery">
+                        <div class="gallery-item"><img src="fiesta.jpg" alt="Batangas Fiesta"><p>Batangas Fiesta</p></div>
+                        <div class="gallery-item"><img src="barong.jpg" alt="Barong Tagalog"><p>Barong Tagalog</p></div>
+                        <div class="gallery-item"><img src="subli.jpg" alt="Subli Dance"><p>Subli Dance</p></div>
+                    </div>
+                    <div class="description">
+                        <p> Batangas is rich in cultural heritage, exemplified by its vibrant fiestas, traditional attire, and folk dances. The Batangas fiesta is a lively celebration filled with colorful parades, music, and communal feasts, showcasing the province's strong sense of community and devotion. The Barong Tagalog, an elegant, embroidered garment often made of piña or jusi fabric, is the traditional formal wear for men in Batangas, symbolizing Filipino identity and craftsmanship. The Subli dance, a traditional folk dance, combines graceful movements and rhythmic beats, performed to honor the Holy Cross during the town’s fiestas, reflecting the deep-rooted faith and artistic expression of the Batangueños.</p>
+                    </div>
+                <div id="newsletter">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter to stay updated on the latest events here in Batangas!</p>
+                    <input type="email" placeholder="Email">
+                    <input type="submit" class="inputMail">
+                </div>
+                <div id="social-icons">
+                    <h2>Follow Us</h2>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#enter-btn').click(function() {
+                $('#greeting-page').hide();
+                $('#shop').show();
+                $('#main-nav').css('display', 'block');
+            });
+            $('.inputMail').click(function() {
+                alert('Thank you for subscribing to our newsletter!');
+            });
+        });
+    </script>
+</body>
+</html>
